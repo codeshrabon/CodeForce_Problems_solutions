@@ -1,0 +1,19 @@
+In Main class 
+the problem statement was entering 'n' number of word form the user 
+after that chect if the words are more then 10 words or not if the words are more then 10 then 
+print will be as the fLatter + word.length + lLatter
+
+now here is catch while we try to take one character from the word we use char data type 
+and while printing it with "fLatter + word.length + lLatter" 
+
+we are actually printing it as ASCII format which is not we want 
+to prevent it we use "" cotation ;
+
+now while we measure the length of the word which is more then 10 
+the fLatter and lLatter are counted 
+so, the middle words are now less then 2 and we need to keep it mind
+
+
+using for loop to count how many word will be enterd from the user 
+when its done we enter to if statement and if it is true 
+we print (fLatter + "" + (word.length - 2) + "" + lLatter);
