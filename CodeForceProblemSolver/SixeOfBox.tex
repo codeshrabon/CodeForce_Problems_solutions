@@ -9,7 +9,10 @@ It's guarantee that each digit of number N
  is greater than 0
 
 char threshholdBoxPosition = N.charAt(position -1);
+but we need the position of input was given from the right position 
+for that we will extract the length of the string and make division with the position 
+    char threshholdBoxPosition = N.charAt(N.length() - position);
             int converInt = Character.getNumericValue(threshholdBoxPosition);
-
+print(convertInt)
             Character.getNumericValue() this method ocnvert char to numeric
 

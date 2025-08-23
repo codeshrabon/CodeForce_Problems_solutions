@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SizeOfTheBox {
+public class Main {
     public static void main(String[] args) {
         // each box size it fixed
 
@@ -10,10 +10,10 @@ public class SizeOfTheBox {
         
         
             int position = 3;
-            char threshholdBoxPosition = N.charAt(position -1);
-            int converInt = Character.getNumericValue(threshholdBoxPosition);
-            if (converInt > 0) {
-                System.out.println(converInt);
+            char threshholdBoxPosition = N.charAt(N.length() - position);
+            int convertInt = Character.getNumericValue(threshholdBoxPosition);
+            if (convertInt > 0) {
+                System.out.println(convertInt);
             }
 
         
