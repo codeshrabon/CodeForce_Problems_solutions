@@ -1,0 +1,34 @@
+rectangular board M * N
+unlimited domino pieces 2 * 1 (M * N)
+allowed to rotate the pieces -> place as many as dominos pieces as possible
+
+1. dominos cover two squires but
+2. no two dominoes overlap
+3. dominoes lies entirely inside the M * N board.
+
+--> find the maximum number of dominos, who are placed under those restriction
+
+[Are of Rectangular board - > A = M * N
+
+M = Length, N = Width
+
+Total number of Rectangles (including squires) -> (M * (M + 1) / 2) * (N * (N + 1) / 2)
+
+Total Number of Squares -> ∑ (M - k + 1) * (N - k + 1)
+--> k represents the side length of the square (e.g., k=1 for 1x1 squares, k=2 for 2x2 squares, etc.)
+
+when we try to find the total squire of a rectangle then
+min(squire-> 1x 1) length of the squire k = 1;
+max(squre-> N x N) length of the squire k = N;]
+
+
+--->
+input:
+a single line given two integers M and N --> board size in squires
+
+-->
+output:
+the maximum number of dominoes which can be placed
+
+1. dominos cover two squires
+---> find the total squires first

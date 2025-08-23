@@ -1,0 +1,43 @@
+contestant score(positive score) >= k-th place --> next round 
+
+total participants 'n' ; which is n >= k
+
+find how many participants will go to next round 
+
+input ---> 
+
+first line two integer n, k 
+second line n score and got position in i-th place and given sequence is non-increasing
+
+input participants n , 
+score in array [] 
+position k 
+if array[i] >= k 
+ 
+but to take the input the score of n-th participants 
+we need array int 
+
+int[] score = new int[n]
+use for loop to give the score from the user 
+Input loop-> Should be i < n
+for (i=0; i< n ;i++){
+    score[i] = sc.nextInt();
+}
+
+to count how many participants are allowed 
+int count=0
+check the score with the postion 
+Counting loop -> you need to check all n participants.
+✅ Should also be i < n.
+for (condition)
+if score[i] >= k 
+
+--> score[k-1] as the threshold 
+because the cut-off depends on the 
+actual scores and the value of k.
+
+use of this means arrya count from 0 - (n-1)
+-> Java arrays are 0-based 
+→ valid indices are 0 to n-1.
+count++;
+ 

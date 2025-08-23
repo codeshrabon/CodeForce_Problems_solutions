@@ -6,25 +6,23 @@ public class SizeOfTheBox {
 
         Scanner sc = new Scanner(System.in);
 
-        int N = sc.nextInt();
+        String N = sc.nextLine();
         
-
         
-
-        int[] boxSize = new int[N];
-        for(int i = 0; i < N; i++){
-            boxSize[i] = sc.nextInt();
-        }
-
-        if (N >= 3) {
             int position = 3;
-        int thresholdBoxPosition = boxSize[position-1];
-        for(int i = 0; i < N; i++){
-            if (boxSize[i] == thresholdBoxPosition ) {
-                System.out.println(boxSize[i]);
+            char threshholdBoxPosition = N.charAt(position -1);
+            int converInt = Character.getNumericValue(threshholdBoxPosition);
+            if (converInt > 0) {
+                System.out.println(converInt);
             }
-        }
-        }
+
+        
+            
+        
+
+        
+
+
         
         sc.close();
         

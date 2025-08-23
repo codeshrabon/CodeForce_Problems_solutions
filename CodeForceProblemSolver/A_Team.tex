@@ -1,0 +1,31 @@
+A. Team 
+
+3 friend Petya, Vasya, Tony form a team 
+participant usually offered several problems 
+they decide if two of them are sure about the solution they will implement the solution 
+or else they won't write the solution 
+
+the contest offers 'n' problems. for each problem we know which friend sure about the solution.
+now find the number of problems which they will write the solution if two friend are sure and write the solution...
+
+
+  solution --> 
+  twoFriend > 2
+  if 1 + 1 + 0 
+1. input line contain single integer 'n' (1<= n <= 1000) number of problems
+2. each n line contain 'three' integers and each integer is either 1 or 0
+3. if first number is equal 1 then Petya is sure about the problem, otherwise he wont sure. and it is to rest of Vasya and Tony 
+4. the numbers on the line are separated by spaces.
+
+int countSolution = 0;
+for
+(input n integer)
+
+input P, V, T as integers 
+P = 1, V = 1, T = 0 => 1
+P = 0, V = 1, T = 1 => 1
+P = 0, V = 0, T = 1 => 0
+Solution 1. (p==1 && v==1) || (p==1 && t==1) || (v==1 && t==1)
+Solution 2. twoFriendSolution p+v+t >= 2
+if twoFriendSolution >= 2
+countSolution ++;
