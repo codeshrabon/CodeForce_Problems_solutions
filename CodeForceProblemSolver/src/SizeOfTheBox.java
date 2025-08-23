@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class SizeOfTheBox {
     public static void main(String[] args) {
         // each box size it fixed
 
