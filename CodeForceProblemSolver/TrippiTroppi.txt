@@ -1,0 +1,19 @@
+Concatenation vs. addition of chars
+
+System.out.println(oneCon + twoCon + threeCon);
+
+You’re actually adding ASCII values of the chars, not printing them side by side.
+Example: 'a' + 'b' + 'c' = 294 (not "abc").
+
+✅ Fix: Use a string builder or "" + oneCon + twoCon + threeCon.
+
+
+String one = sc.nextLine();
+String two = sc.nextLine();
+String three = sc.nextLine();
+This makes the program expect 3 separate lines per test case, while the problem only provides 1 line per test case.
+
+read the whole line once, then split it into 3 words.
+String one = sc.next();
+String two = sc.next();
+String three = sc.next();
