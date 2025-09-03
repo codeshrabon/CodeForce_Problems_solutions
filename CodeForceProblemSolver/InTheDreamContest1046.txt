@@ -1,0 +1,24 @@
+we use 
+
+int firstHalfRiOI = a;
+int firstHalfKDOI = b;
+
+int secondHalfRiOI = c - a; difference between first and second half 
+int secondHalfKDOI = d - b;
+
+then we use boolean to see if our logic is ok
+
+we use Math.max and Math.min 
+
+to formulate 
+
+Math.max() <= 2 * Math.min() + 2
+
+it ensure each half time the goal has no been done 3 consicutive time 
+
+firstHalfRiOI = 3, firstHalfKDOI = 2
+Math.max = 3
+Math.min = 2
+Check: 3 <= 2*2 + 2 → 3 <= 6 ✔
+
+Possible sequence: R K R K R → no 3 consecutive goals
